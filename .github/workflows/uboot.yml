@@ -37,3 +37,4 @@ jobs:
           files: |
             u-boot-*/output/*-nor.bin
             u-boot-*/output/*-nand.bin
+
