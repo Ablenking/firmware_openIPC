@@ -33,7 +33,7 @@ jobs:
       - name: Upload
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest
+          tag_name: u-boot
           files: |
             u-boot-*/output/*-nor.bin
             u-boot-*/output/*-nand.bin
