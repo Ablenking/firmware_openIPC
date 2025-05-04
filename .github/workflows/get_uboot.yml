@@ -14,8 +14,8 @@ jobs:
 
       - name: Download u-boot
         run: |
-          mkdir u-boot
-          cd u-boot 
+          mkdir get_uboot
+          cd get_uboot 
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7202v300-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v200-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v300-universal.bin
@@ -73,6 +73,7 @@ jobs:
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40n-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40xp-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
+          cd ..
           tree ../
 
       - name: Upload u-boot
@@ -81,5 +82,5 @@ jobs:
         with:
           tag_name: u-boot
           files: |
-            **/*.bin
+            get_uboot/*.bin
 
