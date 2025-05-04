@@ -1,1 +1,63 @@
-name:
+name: get_toolchain
+on:
+  workflow_dispatch:
+
+jobs:
+  get_uboot:
+    name: toolchains-a
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install curl
+
+      - name: Download toolchains
+        run: |
+          mkdir toolchains
+          cd toolchains     
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.allwinner-v85x.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.fullhan-fh8852v100.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.fullhan-fh8852v200.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.goke-gk710x.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.goke-gk7205v200.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.goke-gk7205v500.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.grainmedia-gm8136.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516av100.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516cv100.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516cv200.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516cv300.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516cv500.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3516ev200.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3519v101.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3536cv100.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.hisilicon-hi3536dv100.tgz
+          
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.ingenic-t20.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.ingenic-t21.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.ingenic-t31.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.ingenic-t40.tgz
+          
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.novatek-nt9856x.tgz
+          
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.rockchip-rv1106.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.rockchip-rv11xx.tgz
+          
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.sigmastar-infinity6.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.sigmastar-infinity6b0.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.sigmastar-infinity6c.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.sigmastar-infinity6e.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.xiongmai-xm510.tgz
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/toolchain/toolchain.xiongmai-xm530.tgz
+
+          ls -lh
+          sleep 6
+          cd ..
+          tree ../
+
+      - name: Upload toolchains
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: toolchains-A
+          files: |
+            **/*.bin
