@@ -73,7 +73,7 @@ jobs:
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40n-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40xp-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
-          tree
+          tree ../
 
       - name: Upload u-boot
         if: github.event_name != 'pull_request'
