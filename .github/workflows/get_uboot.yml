@@ -77,10 +77,12 @@ jobs:
           tree ../
 
       - name: Upload u-boot
-        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: u-boot
+          token: ${{ secrets.RELEASE_TOKEN }}
           files: |
             get_uboot/*.bin
+
+
 
