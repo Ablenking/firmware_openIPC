@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  toolchain:
-    name: Uboot
+  get_uboot:
+    name: get_uboot
     runs-on: ubuntu-latest
     steps:
       - name: Prepare
@@ -73,7 +73,7 @@ jobs:
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40n-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40xp-universal.bin
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
-          
+          tree
 
       - name: Upload u-boot
         if: github.event_name != 'pull_request'
