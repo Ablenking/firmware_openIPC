@@ -60,4 +60,4 @@ jobs:
         with:
           tag_name: toolchains-A
           files: |
-            toolchains/*.bin
+            toolchains/*.tgz
