@@ -138,21 +138,21 @@ jobs:
           #- ssc335de_ultimate
           #- ssc337_ultimate
           #- ssc337de_ultimate
-          - ssc30kd_ultimate
-          - ssc30kq_ultimate
-          - ssc338q_ultimate
-          - t20_ultimate
+          #- ssc30kd_ultimate
+          #- ssc30kq_ultimate
+          #- ssc338q_ultimate
+          #- t20_ultimate
           #- t21_ultimate
           #- t31_ultimate
           #- t40_ultimate
           #- hi3516av100_ultimate
           #- hi3516dv100_ultimate
-          #- hi3518ev200_ultimate
-          #- hi3516cv300_ultimate
+          - hi3518ev200_ultimate
+          - hi3516cv300_ultimate
           #- hi3516ev200_ultimate
           #- hi3516ev300_ultimate
           #- hi3518ev300_ultimate
-          #- hi3516av200_ultimate
+          - hi3516av200_ultimate
           #- gk7205v200_ultimate
           #- gk7205v300_ultimate
     steps:
