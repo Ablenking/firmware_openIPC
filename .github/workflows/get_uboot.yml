@@ -15,66 +15,66 @@ jobs:
       - name: Download u-boot
         run: |
           mkdir get_uboot
-          cd get_uboot 
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7202v300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7605v100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv500-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev300-nand.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518av100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518cv100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev100-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev200-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev300-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3519v101-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc30kd-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc30kq-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc325-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc325de-nand.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc333-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc335-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc335de-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337de-nand.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337de-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc338q-nand.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc338q-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377d-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377de-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc378de-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc378qe-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t10-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t10l-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20l-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20x-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t21n-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t30a-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t30a1-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31l-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31lc-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31n-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31x-nor.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40a-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40n-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40xp-universal.bin
-          curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
+          cd get_uboot       
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7202v300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7205v300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-gk7605v100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516av300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516cv500-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516dv300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev300-nand.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3516ev300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518av100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518cv100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev100-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev200-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3518ev300-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-hi3519v101-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc30kd-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc30kq-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc325-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc325de-nand.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc333-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc335-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc335de-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337de-nand.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc337de-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc338q-nand.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc338q-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377d-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc377de-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc378de-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-ssc378qe-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t10-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t10l-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20l-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t20x-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t21n-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t30a-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t30a1-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31l-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31lc-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31n-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t31x-nor.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40a-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40n-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-t40xp-universal.bin
+          curl -L  -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
           ls -lh
-          sleep 30
+          sleep 6
           cd ..
           tree ../
 
@@ -82,9 +82,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: u-boot
-          token: ${{ secrets.RELEASE_TOKEN }}
           files: |
             get_uboot/*.bin
-
-
-
