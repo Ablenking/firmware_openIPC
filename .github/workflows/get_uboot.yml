@@ -75,11 +75,11 @@ jobs:
           curl -O  https://github.com/OpenIPC/firmware/releases/download/latest/u-boot-v851s-nor.bin
           
 
-
-
-      - name: Upload
+      - name: Upload u-boot
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: u-boot
           files: |
             **/*.bin
+
