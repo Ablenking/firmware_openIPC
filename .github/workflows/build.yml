@@ -426,7 +426,7 @@ jobs:
       - name: Upload .tgz files to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: hi3518ev200_ul
+          name: 338q_mavlink-routerd
           path: |
             openipc/output/images/*.tgz
 
