@@ -73,7 +73,7 @@ jobs:
           #- hi3516ev100_lite
 
           # Hisilicon [HI3516CV500]
-          #- hi3516av300_lite
+          - hi3516av300_lite
           #- hi3516cv500_lite
           #- hi3516dv300_lite
 
@@ -140,7 +140,7 @@ jobs:
           #- ssc337de_ultimate
           #- ssc30kd_ultimate
           #- ssc30kq_ultimate
-          - ssc338q_ultimate
+          #- ssc338q_ultimate
           #- t20_ultimate
           #- t21_ultimate
           #- t31_ultimate
@@ -214,13 +214,13 @@ jobs:
       - name: Upload .tgz files to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 338q_mavlink-routerd
+          name: hi3516av300_mavlink-routerd
           path: |
             **/*.tgz
 
       - name: Upload rootfs.squashfs files to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: rootfs.squashfs
+          name: hi3516av300_rootfs.squashfs
           path: |
             **/*rootfs.squashfs.*
