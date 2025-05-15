@@ -214,13 +214,13 @@ jobs:
       - name: Upload .tgz files to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 338q_mavlink-routerd
+          name: ssc337de_ultimate_musleabihf_mavlink-routerd
           path: |
             **/*.tgz
 
       - name: Upload rootfs.squashfs files to GitHub Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: rootfs.squashfs
+          name: musleabihf_rootfs.squashfs
           path: |
             **/*rootfs.squashfs.*
