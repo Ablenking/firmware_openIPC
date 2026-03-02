@@ -75,3 +75,9 @@ jobs:
           path: |
             **/mavlink-rout*
             
+      - name: Upload mavlink-routerd_single files to GitHub Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mavlink-routerd_single
+          path: |
+            **/mavlink-routerd
